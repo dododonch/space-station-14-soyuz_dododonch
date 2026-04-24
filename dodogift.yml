@@ -1,0 +1,41 @@
+- type: entityTable
+  id: CargoGiftsTableDododonch
+  table: !type:GroupSelector # ~~we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp~~ But we arent doing that shit yet, it picks a random one StationEventComp be damned.
+    children:
+    - id: DodoGift
+
+#gamerules
+
+- type: entity
+  id: CargoGiftsBase
+  parent: BaseGameRule
+  abstract: true
+  components:
+  - type: GameRule
+    delay:
+      min: 10
+      max: 10
+  - type: StationEvent
+    startColor: "#18abf5"
+    startAudio:
+      path: /Audio/_DeadSpace/Announcements/centcomm.ogg
+  - type: CargoGiftsRule
+    sender: cargo-gift-default-sender
+
+- type: entity
+  id: DodoGift
+  parent: CargoGiftsBase
+    abstract: true
+  components:
+  - type: GameRule
+    delay:
+      min: 10
+      max: 10
+  - type: StationEvent
+    startColor: "#18abf5"
+    startAudio:
+      path: /Audio/_DeadSpace/Announcements/centcomm.ogg
+  - type: CargoGiftsRule
+    description: idk-what-is-it
+    dest: cargo-gift-dest-supp
+    gifts: FoodBurgerAppendix: 1
