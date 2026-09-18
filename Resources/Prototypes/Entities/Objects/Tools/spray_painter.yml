@@ -40,13 +40,8 @@
   - type: StaticPrice
     price: 40
   - type: LimitedCharges
-<<<<<<< HEAD
-    maxCharges: 30
-    lastCharges: 30
-=======
     maxCharges: 30   # DS14-Soyuz value
     lastCharges: 30  # DS14-Soyuz value
->>>>>>> b3fe49fecf6761801cdcb187cd834e787caea007
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
