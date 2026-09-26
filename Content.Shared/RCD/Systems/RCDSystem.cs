@@ -267,9 +267,8 @@ public sealed class RCDSystem : EntitySystem
         if (HasComp<RCDDeconstructableComponent>(target.Value))
             return target;
 
-        // Kofeecheks RCD target normalization: LicenseRef-Kofeecheks
-        if (TryComp<PhysicsComponent>(target.Value, out var physics))
-            return physics.CanCollide ? target : null;
+        if (TryComp<PhysicsComponent>(target.Value, out var physics) && physics.CanCollide)
+            return target;
 
         if (TryComp<FixturesComponent>(target.Value, out var fixtures))
         {
@@ -605,7 +604,7 @@ public sealed class RCDSystem : EntitySystem
             }
 
             // The tile has a structure sitting on it
-            // DS-14 Soyuz
+            // DS14-Soyuz
             if (TryComp<MapGridComponent>(tile.GridUid, out var grid) &&
                 _tileCenterCollision.IsBlocked(
                     (tile.GridUid, grid),

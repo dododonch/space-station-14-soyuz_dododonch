@@ -152,10 +152,8 @@
     pocket2: DoorRemoteCustom
   storage:
     back:
-    - ERTloadoutRedPrimaryLeader
-    - ERTloadoutRedSecondaryLeader
-    - ERTloadoutRedSupport
-    - UplinkERTRed
+    - ERTloadoutRedPrimary
+    - ERTloadoutRedSecondary
     - BoxCardboardERT
     - PinpointerNuclear
     - CrowbarRed
@@ -233,12 +231,9 @@
     pocket2: DoorRemoteCustom
   storage:
     back:
-    - ERTloadoutGammaPrimaryLeader
-    - ERTloadoutGammaSecondaryLeader
-    - ERTloadoutGammaSupport
-    - ERTloadoutMelee
-    - UplinkERTGamma
-    - BoxCardboardERT
+    - ERTloadoutGammaPrimary
+    - ERTloadoutGammaSecondary
+    - BoxCardboardERTGamma
     - PinpointerNuclear
     - CrowbarRed
     - BSAACombatKitFilled
@@ -290,11 +285,7 @@
     - !type:RoleTimeRequirement
       role: JobERTSecurityAmber
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTSecurityAmber
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -373,11 +364,7 @@
     - !type:RoleTimeRequirement
       role: JobERTSecurityRed
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTSecurityRed
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -386,9 +373,9 @@
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurity
     eyes: ClothingEyesHudERT
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetAltAERT
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitERTRedSecurity
+    outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: JetpackSecurityFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTSecurityRedPDA
@@ -399,14 +386,12 @@
     back:
     - ERTloadoutRedPrimary
     - ERTloadoutRedSecondary
-    - ERTloadoutMelee
     - BoxCardboardERT
     - CrowbarRed
     - PinpointerNuclear
     - MedkitCombatFilled
     - InjectorCaseERTFilled
     - WeaponDisabler
-    - UplinkERTRed
 
 ## Gamma
 - type: job
@@ -452,11 +437,7 @@
     - !type:RoleTimeRequirement
       role: JobERTSecurityGamma
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTSecurityGamma
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -478,15 +459,12 @@
     back:
     - ERTloadoutGammaPrimary
     - ERTloadoutGammaSecondary
-    - ERTloadoutGammaSupport
-    - ERTloadoutMelee
     - BoxCardboardERTGamma
     - CrowbarRed
     - PinpointerNuclear
     - BSAACombatKitFilled
     - InjectorCaseERTFilled
     - WeaponDisabler
-    - UplinkERTGamma
 
 # Medical
 ## Amber
@@ -533,11 +511,7 @@
     - !type:RoleTimeRequirement
       role: JobERTMedicalAmber
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTMedicalAmber
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -618,11 +592,7 @@
     - !type:RoleTimeRequirement
       role: JobERTMedicalRed
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTMedicalRed
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -631,9 +601,9 @@
     jumpsuit: ClothingUniformJumpsuitERTMedic
     back: ClothingBackpackERTMedical
     eyes: ClothingEyesHudERTGamma
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetAltAERT
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitERTRedMedic
+    outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: JetpackSecurityFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTMedicRedPDA
@@ -644,7 +614,6 @@
     back:
     - ERTloadoutRedPrimary
     - ERTloadoutRedSecondary
-    - ERTloadoutRedSupport
     - ERTloadoutMelee
     - BoxCardboardERT
     - DefibrillatorCompact
@@ -702,11 +671,7 @@
     - !type:RoleTimeRequirement
       role: JobERTMedicalGamma
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTMedicalGamma
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -728,8 +693,6 @@
     back:
     - ERTloadoutGammaPrimary
     - ERTloadoutGammaSecondary
-    - ERTloadoutGammaSupport
-    - UplinkERTGamma
     - ERTloadoutMelee
     - BoxCardboardERTGamma
     - DefibrillatorCompact
@@ -785,11 +748,7 @@
     - !type:RoleTimeRequirement
       role: JobERTEngineerAmber
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTEngineerAmber
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -870,11 +829,7 @@
     - !type:RoleTimeRequirement
       role: JobERTEngineerRed
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTEngineerRed
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -950,11 +905,7 @@
     - !type:RoleTimeRequirement
       role: JobERTEngineerGamma
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTEngineerGamma
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -1030,11 +981,7 @@
     - !type:RoleTimeRequirement
       role: JobERTJanitorAmber
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTJanitorAmber
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -1108,11 +1055,7 @@
     - !type:RoleTimeRequirement
       role: JobERTJanitorRed
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTJanitorRed
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
@@ -1185,11 +1128,7 @@
     - !type:RoleTimeRequirement
       role: JobERTJanitorGamma
       time: 54000 # 15 hours
-    NKVBRankSergeant:
-    - !type:RoleTimeRequirement
-      role: JobERTJanitorGamma
-      time: 27000 # 7.5 hours
-    NKVBRankPilot: []
+    NKVBRankSergeant: []
 #DS14-Soyuz-end
 
 - type: startingGear
